@@ -1,0 +1,267 @@
+body {
+  font-family: 'Cambay', sans-serif;
+    background-color: #f1f2f3;
+    background-image:
+        -webkit-linear-gradient(0deg, transparent .05em, rgba(0,0,0,.05) .05em, rgba(0,0,0,.05) .125000em, transparent .125000em),
+        -webkit-linear-gradient(rgba(0,0,0,.05) .062500em, transparent .062500em);
+    background-image:
+        -moz-linear-gradient(0deg, transparent .05em, rgba(0,0,0,.05) .05em, rgba(0,0,0,.05) .125000em, transparent .125000em),
+        -moz-linear-gradient(rgba(0,0,0,.05) .062500em, transparent .062500em);
+    background-image:
+        -ms-linear-gradient(0deg, transparent .05em, rgba(0,0,0,.05) .05em, rgba(0,0,0,.05) .125000em, transparent .125000em),
+        -ms-linear-gradient(rgba(0,0,0,.05) .062500em, transparent .062500em);
+    background-image:
+        -o-linear-gradient(0deg, transparent .05em, rgba(0,0,0,.05) .05em, rgba(0,0,0,.05) .125000em, transparent .125000em),
+        -o-linear-gradient(rgba(0,0,0,.05) .062500em, transparent .062500em);
+    background-image:
+        linear-gradient(0deg, transparent .05em, rgba(0,0,0,.05) .05em, rgba(0,0,0,.05) .125000em, transparent .125000em),
+        -o-linear-gradient(rgba(0,0,0,.05) .062500em, transparent .062500em);
+    background-size: .75em .75em;
+    background-position: 0 -0.5em;
+}
+
+header {
+  margin: 20px 50px;
+}
+header section {
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: table;
+}
+.container{
+    margin:30px auto;
+    width: 1000px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 13.5px;
+}
+
+.name-logo {
+  background-image:url('http://i.imgur.com/56RlgxI.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left;
+  /*border-right: 1px solid black;*/
+  float: left;
+  width: 55%;
+  min-height: 260px;
+}
+
+.contact-info {
+
+  float: right;
+  display: inline;
+  margin: 0px 0px 10px;
+  width: 30%;
+    padding-right: 0;
+}
+
+.contact-info .title {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: right;
+}
+
+.contact-info ul {
+  padding-left: 0;
+}
+
+.contact-info ul li {
+  list-style-type: none;
+  left: 0;
+  padding: 0px 0;
+  font-size: 14px;
+  /*border-bottom: 1px solid blue;*/
+}
+
+.contact-info ul li .contact-detail {
+  text-align: right;
+  float: right;
+  vertical-align: bottom;
+  margin-top: 8px;
+}
+
+article {
+  margin: 20px 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article section {
+  -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+  margin: 0 10px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section-body {
+  padding-left: 10px;
+}
+
+ul.school {
+    font-weight: bold;
+  padding-left: 0;
+}
+ul.school-body {
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.section-body ul li, ul.school li {
+  list-style-type: none;
+  margin: 0px 0;
+
+
+}
+
+ul.school li .school-location {
+
+}
+
+ul.school li .school-years {
+  float: right;
+}
+
+.job-title {
+  font-size: 18px;
+}
+
+.job-location {
+  padding-left: 20px;
+}
+.job-location span:before {
+  content: " @ ";
+}
+
+.split-jobs-section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.job-details {
+  -webkit-flex: 0 0 300px;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  margin-right: 20px;
+}
+
+.job-location {
+  -webkit-flex: 2 100%;
+      -ms-flex: 2 100%;
+          flex: 2 100%;
+}
+.split-jobs-section p {
+  margin: 10px 0;
+}
+
+/*.skills ul {
+  column-count: 2;
+}*/
+
+
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:5px;
+    width:100%;
+    background:#eee;
+    height:39px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:39px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:39px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:25px;
+    line-height:35px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-info, .name-logo {
+    width: 100%;
+  }
+  .name-logo {
+    margin-left: 25px;
+  }
+  .contact-info {
+    margin-top: 10px;
+  }
+  article {
+    display: block;
+  }
+  .split-jobs-section {
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .job-details, .job-description {
+    -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+  }
+}
+/*# sourceMappingURL=custom.css.map */

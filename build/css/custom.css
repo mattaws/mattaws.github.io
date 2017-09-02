@@ -1,0 +1,152 @@
+body {
+  font-family: 'Cambay', sans-serif;
+}
+
+header {
+  margin: 20px 50px;
+}
+header section {
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: table;
+}
+
+.name-logo {
+  background-image:url('http://i.imgur.com/FzXdI0w.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left;
+  /*border-right: 1px solid black;*/
+  float: left;
+  width: 55%;
+  min-height: 300px;
+}
+
+.contact-info {
+  float: left;
+  display: inline;
+  margin: 90px 10px 10px;
+  width: 35%;
+}
+
+.contact-info .title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-info ul {
+  padding-left: 0;
+}
+
+.contact-info ul li {
+  list-style-type: none;
+  left: 0;
+  padding: 5px 0;
+  font-size: 14px;
+  /*border-bottom: 1px solid blue;*/
+}
+
+.contact-info ul li .contact-detail {
+  text-align: right;
+  float: right;
+  vertical-align: bottom;
+  margin-top: 8px;
+}
+
+article {
+  margin: 20px 50px;
+  display: flex;
+}
+
+article section {
+  flex: 1 100%;
+  margin: 0 10px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section-body {
+  padding-left: 10px;
+}
+
+ul.school {
+  padding-left: 0;
+}
+
+.section-body ul li, ul.school li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+ul.school li .school-location {
+
+}
+
+ul.school li .school-years {
+  float: right;
+}
+
+.job-title {
+  font-size: 18px;
+}
+
+.job-location {
+  padding-left: 20px;
+}
+.job-location span:before {
+  content: " @ ";
+}
+
+.split-jobs-section {
+  display: flex;
+}
+
+.job-details {
+  flex: 0 0 300px;
+  margin-right: 20px;
+}
+
+.job-location {
+  flex: 2 100%;
+}
+.split-jobs-section p {
+  margin: 10px 0;
+}
+
+/*.skills ul {
+  column-count: 2;
+}*/
+
+.skills li {
+  display: flex;
+  /*width: 50%;*/
+}
+
+.skills li .skill-name, .skills li .skill-rating {
+  flex: 1 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-info, .name-logo {
+    width: 100%;
+  }
+  .name-logo {
+    margin-left: 25px;
+  }
+  .contact-info {
+    margin-top: 10px;
+  }
+  article {
+    display: block;
+  }
+  .split-jobs-section {
+    flex-flow: row wrap;
+  }
+  .job-details, .job-description {
+    flex: 1 100%;
+  }
+} 
