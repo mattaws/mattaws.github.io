@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<div class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -18,9 +18,15 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Cambay:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+
 
     </head>
+    <div id='dom-to-print'>
+
     <div class="container">
+
 
     <body>
         <!--[if lt IE 8]>
@@ -29,13 +35,12 @@
 
         <header>
             <section>
-                <div class="name-logo">
-                </div>
+                <div class="name-logo"> </div>
+                <div class="resume-title">
+                    <p style="font-size: 45px; margin-top: -3px; font-weight: bold" >MATT WARD</p>
 
+                </div>
                 <div class="contact-info">
-                    <div class="title">
-                        <span>MATT WARD</span>
-                    </div>
                     <ul>
                         <li>
                             <div>
@@ -55,7 +60,8 @@
                                   <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
                                 </span>
                                 &nbsp;Email&nbsp;
-                                <div class="contact-detail"><span>mattryanward@gmail.com</span></div>
+
+                                <div class="contact-detail"><span><a href="mailto:mattyanward@gmail.com?Subject=Matt_Ward_Resume" target="_top">mattryanward@gmail.com</a></span></div>
                             </div>
                             <div style="clear: both"></div>
                         </li>
@@ -66,7 +72,7 @@
                                   <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
                                 </span>
                                 &nbsp;Location&nbsp;
-                                <div class="contact-detail"><span>Seattle WA </span></div>
+                                <div class="contact-detail"><span><a href="https://goo.gl/4xuS3u" target="_blank">Seattle WA </a></span></div>
                             </div>
                             <div style="clear: both"></div>
                         </li>
@@ -92,13 +98,131 @@
                             </div>
                             <div style="clear: both"></div>
                         </li>
+                        <li>
+                        <li>
+                            <div>
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                                &nbsp;PDF&nbsp;
+                                <div class="contact-detail"><span> <button id='print-btn'>Export PDF</button></span></div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </li>
                     </ul>
                 </div>
-                <div style="clear:both;"></div>
             </section>
         </header>
 
+
         <article>
+            <section>
+                <div class="life-experience">
+                    <div class="experience-title">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span>Experience</span>
+
+                    </div>
+
+                    <div class="section-body">
+                        <ul>
+                            <li>
+                                <div class="job-title">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="fa fa-cloud fa-stack-1x"></i>
+                                    </span>
+                                    <span>&nbsp;Manager, Business Operations, AWS Infrastructure&nbsp;</span>
+                                    <div class="job-span">
+                                        <span>(Seattle, WA | 2016-present)</span>
+                                    </div>
+
+                                </div>
+                                <section class="split-jobs-section">
+                                    <div class="job-description">
+                                        <p>-Managed team of 10 software engineers, web developers and technical program managers, including remote team</p>
+                                        <p>-Responsible for scaling efficiency by building web applications to automate manual processes and operational metrics</p>
+                                        <p>-Built homegrown Bill of Material, specifications, project management, change management, and cost tools </p>
+                                    </div>
+                                </section>
+                            </li>
+
+
+                            <li>
+                                <div class="job-title">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="fa fa-amazon fa-stack-1x" ></i>
+                                    </span>
+                                    <span>&nbsp;Sr. Supply Chain Product Manager, AWS Infrastructure&nbsp;</span>
+                                    <div class="job-span">
+                                    <span>(Seattle, WA | 2014-2016)</span>
+                                    </div>
+
+                                </div>
+                                <section class="split-jobs-section">
+                                    <div class="job-description">
+                                        <p>-Owned launch to mass production for server new poduct introduction</p>
+                                        <p>-Launched M4, I3, C5, and X1 instances for AWS EC2</p>
+                                        <p>-Worked with ODMs, component manufacturers, internal engineering teams and data centers to enable successful launch </p>
+                                    </div>
+                                </section>
+                            </li>
+
+
+                            <li>
+                                <div class="job-title">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="fa fa-fighter-jet fa-stack-1x"></i>
+                                    </span>
+                                    <span>&nbsp;Manager, Supply Chain, Aerospace Systems &nbsp;</span>
+                                    <div class="job-span">
+                                    <span>(Redondo Beach, CA | 2012-2014)</span>
+                                    </div>
+
+                                </div>
+                                <section class="split-jobs-section">
+
+                                    <div class="job-description">
+                                        <p>-Owned all supply chain activities, reporting to Program Management Office</p>
+                                        <p>-Managed Extremely High Frequency (EHH, 40GHZ) Active Electronically Scanned Array (AESA) suporting aerospace systems</p>
+                                        <p>-High Complexity / Low Volume supply chain.  All components were uniquely built the mission </p>
+
+                                    </div>
+                                </section>
+                            </li>
+
+                            <li>
+                                <div class="job-title">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="material-icons" style="font-size:32px; margin-left: 1px; margin-top: 0px" >satellite</i>
+                                    </span>
+                                    <span>&nbsp;Procurement, Space Systems &nbsp;</span>
+                                    <div class="job-span">
+                                    <span>(Redondo Beach, CA | 2007-2012)</span>
+                                    </div>
+
+                                </div>
+                                <section class="split-jobs-section">
+                                    <div class="job-description">
+                                        <p>-Managed Suppliers with cost-plus and fixed price contracts valued over $100M</p>
+                                        <p>-Top Secret / SCI access</p>
+                                        <p>-Nature of irreparable satellite business commanded uquestionable quality </p>
+
+                                    </div>
+                                </section>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <section>
                 <div class="profile-description">
                     <div class="section-title">
@@ -110,7 +234,7 @@
                     </div>
                     <div class="section-body">
                         <div class="skillbar clearfix " data-percent="90%">
-                            <div class="skillbar-title" style="background: #d35400;"><span>Excel</span></div>
+                            <div class="skillbar-title" style="background: #d35400;"><span>EXCEL</span></div>
                             <div class="skillbar-bar" style="background: #e67e22;"></div>
                             <div class="skill-bar-percent">90%</div>
                         </div> <!-- End Skill Bar -->
@@ -133,239 +257,80 @@
                             <div class="skill-bar-percent">70%</div>
                         </div> <!-- End Skill Bar -->
 
-                        <div class="skillbar clearfix " data-percent="40%">
+                        <div class="skillbar clearfix " data-percent="60%">
                             <div class="skillbar-title" style="background: Gray;"><span>Python</span></div>
                             <div class="skillbar-bar" style="background: Gray;"></div>
                             <div class="skill-bar-percent">40%</div>
                         </div> <!-- End Skill Bar -->
 
-                        <div class="skillbar clearfix " data-percent="30%">
-                            <div class="skillbar-title" style="background: #27ae60;"><span>HTML</span></div>
+                        <div class="skillbar clearfix " data-percent="50%">
+                            <div class="skillbar-title" style="background: #27ae60;"><span>HTML-JS-CSS</span></div>
                             <div class="skillbar-bar" style="background: #2ecc71;"></div>
                             <div class="skill-bar-percent">30%</div>
                         </div> <!-- End Skill Bar -->
 
-                        <div class="skillbar clearfix " data-percent="30%">
-                            <div class="skillbar-title" style="background: Red;"><span>Javascript</span></div>
-                            <div class="skillbar-bar" style="background: Red;"></div>
-                            <div class="skill-bar-percent">30%</div>
-                        </div> <!-- End Skill Bar -->
-
-                        <div class="skillbar clearfix " data-percent="30%">
-                            <div class="skillbar-title" style="background: #124e8c;"><span>CSS</span></div>
-                            <div class="skillbar-bar" style="background: #4288d0;"></div>
-                            <div class="skill-bar-percent">30%</div>
-                        </div> <!-- End Skill Bar -->                    </div>
+                    </div>
                 </div>
-            </section>
-
-            <section>
-                <div class="education">
-                    <div class="section-title">
+            <div class="education">
+                <div class="section-title">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                         </span>
-                        <span>Education</span>
-                    </div>
-                    <div class="section-body">
-                        <ul class="school">
-                            <li>
-                                <span class="school-location">Certificate in IT Foundations </span>
-                                <span class="school-years">2016-2017</span><span style="clear:both">
+                    <span>Education</span>
+                </div>
+                <div class="section-body">
+                    <ul class="school">
+                        <li>
+                            <span class="school-location">Certificate in IT Foundations - UW </span>
+                            <span class="school-years">2016-2017</span><span style="clear:both">
                                 <ul class="school-body">
-                                    <li>
-                                    -University of Washington
-                                    </li>
                                      <li>
-                                    -Python, Data Structures & Algorithms, Javascript/HTML/CSS Web Dev
+                                    -Python, Data Structures & Algorithms, JS/HTML/CSS WebDev
                                     </li>
                                 </ul>
 
-                            </li>
-                            <li>
-                                <span class="school-location">M.S., Supply Chain Management - in progress </span>
-                                <span class="school-years">2014 - present</span><span style="clear:both">
-                                <ul class="school-body">
-                                    <li>
-                                    -University of San Diego
-                                    </li>
-                                     <li>
-                                    -Negotiations, Contracts, Logistics and Supply Management
-                                    </li>
-                                </ul>
+                        </li>
 
-                            </li>
-                            <li>
-                                <span class="school-location">M.S., System Engineering</span>
-                                <span class="school-years">2011-2013</span><span style="clear:both">
+                        <li>
+                            <span class="school-location">M.S., System Engineering</span>
+                            <span class="school-years">2011-2013</span><span style="clear:both">
                                 <ul class="school-body">
-                                    <li>
-                                    -Loyola Marymount University
-                                    </li>
+
                                      <li>
                                     -Architecture, Requirements, Lean, Quality, Program Management
                                     </li>
                                 </ul>
 
-                            </li>
-                            <li>
-                                <span class="school-location">Certificate in Government Contract Management</span>
-                                <span class="school-years">2010-2011</span><span style="clear:both"><br>
+                        </li>
+                        <li>
+                            <span class="school-location">Certificate in Government Contract Management, UCLA</span>
+                            <span class="school-years">2010-2011</span><span style="clear:both"><br>
                                 <ul class="school-body">
-                                    <li>
-                                    -University of California, Los Angeles
-                                    </li>
-                                     <li>
-                                    -Federal Acquisition Regulation, Price-Cost Analysis, Contract Types, Proposals
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="school-location">B.S., Industrial Technology Cal Poly, San Luis Obispo</span>
-                                <span class="school-years">2003-2007</span><span style="clear:both"><br>
-                                <ul class="school-body">
-                                    <li>
-                                    -California Polytechnic State University, San Luis Obispo
-                                    </li>
-                                     <li>
-                                    -Manufacturing Processes, Lean, Quality, Computer Aided Design, Entrepenuership
-                                    </li>
-                                </ul>
-                            </li>
 
-                        </ul>
-                    </div>
+                                     <li>
+                                    -Federal Acquisition Regulation, Cost Analysis, Contract Types
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <span class="school-location">B.S., Industrial Technology Cal Poly, San Luis Obispo</span>
+                            <span class="school-years">2003-2007</span><span style="clear:both"><br>
+                                <ul class="school-body">
+                                     <li>
+                                    -Manufacturing Processes, Lean, Quality, Entrepenuership
+                                    </li>
+                                </ul>
+                        </li>
+
+                    </ul>
                 </div>
+            </div>
+            </section>
             </section>
         </article>
 
-        <article>
-            <section>
-                <div class="life-experience">
-                    <div class="section-title">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <span>Experience</span>
-                    </div>
-
-                    <div class="section-body">
-                        <ul>
-                            <li>
-                                <div class="job-title">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-square-o fa-stack-2x"></i>
-                                        <i class="fa fa-cloud fa-stack-1x"></i>
-                                    </span>
-                                    <span>&nbsp;Manager, Business Operations, AWS Infrastructure&nbsp;</span>
-                                    <span style="float:right;">(Seattle, WA | 2016-present)</span>
-                                </div>
-                                <section class="split-jobs-section">
-                                    <div class="job-details">
-                                        <div class="job-location">
-                                            <ul style="padding-left: 0">
-                                                <li><span>Amazon Web Services</span></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="job-description">
-                                        <p>-Managed team of 10 software engineers, web developers and technical program managers, including remote team in Cupertino, CA</p>
-                                        <p>-Responsible for scaling efficiency by building web applications to automate manual processes and visualizing operational metrics</p>
-                                        <p>-Built homegrown Bill of Material, specifications, project management, change management, and cost tools </p>
-                                    </div>
-                                </section>
-                            </li>
-
-
-                            <li>
-                                <div class="job-title">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-square-o fa-stack-2x"></i>
-                                        <i class="fa fa-amazon fa-stack-1x" ></i>
-                                    </span>
-                                    <span>&nbsp;Sr. Supply Chain Product Manager, AWS Infrastructure&nbsp;</span>
-                                    <span style="float:right;">(Seattle, WA | 2014-2016)</span>
-                                </div>
-                                <section class="split-jobs-section">
-                                    <div class="job-details">
-                                        <div class="job-location">
-                                            <ul style="padding-left: 0">
-                                                <li><span>Amazon Web Services</span></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="job-description">
-                                        <p>-Owned launch to mass production for server new poduct introduction</p>
-                                        <p>-Launched M4, I3, C5, and X1 instances for AWS EC2</p>
-                                        <p>-Worked with ODMs, component manufacturers, internal engineering teams and data centers to enable successful launch </p>
-                                    </div>
-                                </section>
-                            </li>
-
-
-                            <li>
-                                <div class="job-title">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-square-o fa-stack-2x"></i>
-                                        <i class="fa fa-fighter-jet fa-stack-1x"></i>
-                                    </span>
-                                    <span>&nbsp;Manager, Supply Chain, Aerospace Systems &nbsp;</span>
-                                    <span style="float:right;">(Redondo Beach, CA | 2012-2014)</span>
-                                </div>
-                                <section class="split-jobs-section">
-                                    <div class="job-details">
-                                        <div class="job-location">
-                                            <ul style="padding-left: 0">
-                                                <li><span>Northrop Grumman</span></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="job-description">
-                                        <p>-Owned all supply chain activities, reporting to Program Management Office</p>
-                                        <p>-Managed Extremely High Frequency (EHH, 40GHZ) Active Electronically Scanned Array (AESA) suporting aerospace systems</p>
-                                        <p>-High Complexity / Low Volume supply chain.  All components were uniquely built the mission </p>
-
-                                    </div>
-                                </section>
-                            </li>
-
-                            <li>
-                                <div class="job-title">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-square-o fa-stack-2x"></i>
-                                        <i class="material-icons" style="font-size:32px; margin-left: 8px; margin-top: 6px" >satellite</i>
-                                    </span>
-                                    <span>&nbsp;Procurement, Space Systems &nbsp;</span>
-                                    <span style="float:right;">(Redondo Beach, CA | 2007-2012)</span>
-                                </div>
-                                <section class="split-jobs-section">
-                                    <div class="job-details">
-                                        <div class="job-location">
-                                            <ul style="padding-left: 0">
-                                                <li><span>Northrop Grumman</span></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="job-description">
-                                        <p>-Managed Suppliers with cost-plus and fixed price contracts valued over $100M</p>
-                                        <p>-Top Secret / SCI access</p>
-                                        <p>-Nature of irreparable satellite business commanded uquestionable quality </p>
-
-                                    </div>
-                                </section>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </article>
+    </body>
     </div>
 
 
@@ -385,5 +350,6 @@
                 r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-    </body>
+    </div>
+    </div>
 </html>

@@ -21,68 +21,73 @@ body {
 }
 
 header {
-  margin: 20px 50px;
+  margin: 5px 5px;
 }
 header section {
   border-bottom: 1px solid black;
   width: 100%;
   display: table;
 }
+
 .container{
-    margin:30px auto;
-    width: 1000px;
+    font-size: 11.5px;
+    margin: 20px;
+    width: auto;
+    height: auto;
     border-style: solid;
     border-width: 2px;
-    font-size: 13.5px;
+
 }
 
 .name-logo {
-  background-image:url('http://i.imgur.com/56RlgxI.jpg');
+  background-image:url(../img/portrait.jpg) ;
   background-repeat:no-repeat;
   background-size:contain;
   background-position:left;
   /*border-right: 1px solid black;*/
   float: left;
-  width: 55%;
-  min-height: 260px;
+    padding-bottom: 5px;
+  width: 10%;
+  min-height: 165px;
+
+}
+
+.resume-title{
+    margin-top: 0px;
+
 }
 
 .contact-info {
-
   float: right;
-  display: inline;
-  margin: 0px 0px 10px;
-  width: 30%;
-    padding-right: 0;
+  width: 40%;
+    margin-top: -115px;
+
 }
 
-.contact-info .title {
-  font-weight: 600;
-  font-size: 40px;
-  text-align: right;
-}
 
 .contact-info ul {
   padding-left: 0;
+
+
 }
 
 .contact-info ul li {
   list-style-type: none;
-  left: 0;
-  padding: 0px 0;
-  font-size: 14px;
-  /*border-bottom: 1px solid blue;*/
+    margin-top: -3px;
+
+
+
+    /*border-bottom: 1px solid blue;*/
 }
 
 .contact-info ul li .contact-detail {
   text-align: right;
   float: right;
-  vertical-align: bottom;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 article {
-  margin: 20px 50px;
+  margin: 0px 0px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -97,20 +102,35 @@ article section {
 
 .section-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
+    float: right;
+    width: 81%;
 }
 
+.experience-title {
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+
 .section-body {
-  padding-left: 10px;
+  padding-left: 2px;
 }
 
 ul.school {
     font-weight: bold;
   padding-left: 0;
+    float: right;
+    width: 80%;
 }
 ul.school-body {
     font-weight: normal;
-    padding-left: 20px;
+    padding-left: 0px;
+    margin-top: 0px;
+    padding: 5px;
+
+
 }
 
 .section-body ul li, ul.school li {
@@ -126,40 +146,50 @@ ul.school li .school-location {
 
 ul.school li .school-years {
   float: right;
+
 }
 
 .job-title {
-  font-size: 18px;
-}
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top: -10px;
+    width: 110%;
 
-.job-location {
-  padding-left: 20px;
-}
-.job-location span:before {
-  content: " @ ";
+
+
 }
 
 .split-jobs-section {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+
+
 }
 
 .job-details {
   -webkit-flex: 0 0 300px;
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
-  margin-right: 20px;
+    font-weight: normal;
+    padding-left: 0px;
 }
 
-.job-location {
-  -webkit-flex: 2 100%;
-      -ms-flex: 2 100%;
-          flex: 2 100%;
+.job-span {
+    margin-top: 5px;
+    text-align: right;
+    float: right;
 }
+
+
 .split-jobs-section p {
-  margin: 10px 0;
+    width: 100%;
+    margin-top: -2px;
+    margin-left: 25px;
+
+
 }
+
+
+
+
 
 /*.skills ul {
   column-count: 2;
@@ -171,9 +201,10 @@ ul.school li .school-years {
     position:relative;
     display:block;
     margin-bottom:5px;
-    width:100%;
+    width:80%;
+    float: right;
     background:#eee;
-    height:39px;
+    height:27px;
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
@@ -195,7 +226,6 @@ ul.school li .school-years {
     left:0;
     width:110px;
     font-weight:bold;
-    font-size:13px;
     color:#ffffff;
     background:#6adcfa;
     -webkit-border-top-left-radius:3px;
@@ -209,9 +239,11 @@ ul.school li .school-years {
 .skillbar-title span {
     display:block;
     background:rgba(0, 0, 0, 0.1);
-    padding:0 20px;
-    height:39px;
-    line-height:35px;
+    padding:0 0px;
+    height:27px;
+    line-height:27px;
+    text-align: center;
+    vertical-align: middle;
     -webkit-border-top-left-radius:3px;
     -webkit-border-bottom-left-radius:3px;
     -moz-border-radius-topleft:3px;
@@ -221,7 +253,7 @@ ul.school li .school-years {
 }
 
 .skillbar-bar {
-    height:39px;
+    height:27px;
     width:0px;
     background:#6adcfa;
     border-radius:3px;
@@ -233,8 +265,7 @@ ul.school li .school-years {
     position:absolute;
     right:10px;
     top:0;
-    font-size:11px;
-    height:25px;
+    height:27px;
     line-height:35px;
     color:#ffffff;
     color:rgba(0, 0, 0, 0.4);
@@ -262,6 +293,7 @@ ul.school li .school-years {
     -webkit-flex: 1 100%;
         -ms-flex: 1 100%;
             flex: 1 100%;
+
   }
 }
 /*# sourceMappingURL=custom.css.map */
